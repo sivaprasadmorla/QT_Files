@@ -1,0 +1,189 @@
+Array:
+------
+
+Def: 
+      Array is a Data Strucure. It is used to store the data.
+
+      it is used to store same or different type of data.
+
+                                                                                    ****  The data type of an array is "OBJECT".     
+
+-------------------------------------------------------------
+
+
+How to Create an Array:
+---     ----     ----
+
+        var variableName= [ ]
+
+        var user = [ 101, "siva", "HYD"]
+
+        The elements in an array is separated by "Comma".
+
+-----------------------------------------------------------------
+
+length: It is used to find the no.of elements in an array.
+
+    var arr = [1,2,3,4,5]
+
+    console.log(arr.length)
+
+    output:-
+    -----
+            5
+
+-----------------------------------------------
+
+Pre-Defined Functions.
+
+        push():
+                It add a new element at the end of an array.
+
+                arr.push()
+
+                ex: var arr=[1,2,3]
+
+                    arr.push(4,5)
+
+                    console.log(arr)
+            
+        unshift():
+                    It adds a new element at the initial position of an array.
+
+                    arr.unshift()
+
+                ex: var arr =[2,3,4]
+
+                    arr.unshift(1)
+
+                    console.log(arr)
+
+
+        pop():
+                It removes last element from the array.
+
+                    arr.pop()
+
+                ex: var arr =[1,2,3,4]
+
+                    arr.pop()
+                    console.log(arr)
+        
+
+        shift():
+                 It removes first element in the array.
+
+                    arr.shift()
+
+                ex:  var arr = [1,2,3,4]
+
+                    arr.shift()
+
+                    console.log(arr)
+
+                o/p:
+                        [2,3,4]
+
+        includes():
+                    It will check the required element is present in the array or not.
+
+                    arr.includes(value)
+
+                ex: var arr=[1,2,3,4]
+
+                    console.log(arr.includes(3))
+                    console.log(arr.includes(5))
+
+                o/p:-
+                        True
+                        False
+
+        indexOf():
+                    It will find the index of an element in an array.
+
+                    arr.indexOf(value)
+
+                ex: var arr=[1,2,3,4]
+
+                    console.log(arr.indexOf(1))
+                    console.log(arr.indexOf(5))   -----> if the element is not found then it will return  -1.
+
+                o/p:-
+                        0
+                        -1 
+
+
+        
+        slice():
+
+                If we want to access a range of elements,then we use slice(). It will return a new array
+
+                arr.slice(startIndex,endIndex)
+                
+                let arr = [1,2,3,4,5]
+
+                let newArray = arr.slice(1,4)
+
+                let newArray = arr.slice(1,-3)  // [2]
+                let newArray = arr.slice(1,-1)  //[2,3,4]
+                console.log(newArray)
+
+        
+        splice():
+                    It is used to add or remove any specific element from the array.
+
+                    arr.splice(startindexnumber, count)              ------> it will remove the element at that position.
+
+                    let arr = [1,2,3,4,5]
+
+                     arr.splice(1,1)      // [1,3,4,5]
+
+                     arr.splice(1,1,"siva")  // [1,"siva",3,4,5]
+
+                     arr.splice(1,0,"siva") // [1,"siva",2,3,4,5]    ------> It doesn't remove any element from the array It will add the element at index 1
+
+        forEach():
+
+                It is used to get access of each and every element of the array.
+
+                    let arr =[1,2,3,4]
+
+                    arr.forEach((element,index)=>{
+                        console.log(element);
+                    })
+
+        map():
+                It is used to access each element in the array and do some actions on it.
+
+                It will return the result in the new array.
+
+                 let newArray= arrName.map((element,index)=>{
+                    
+                    return
+                     });
+
+
+        lastIndexOf():
+                        It will return index of last occurence of the element.
+
+                        var arr = [10,20,30,50,10,60]
+
+                        arr.indexOf(10)  // returns 0
+
+                        arr. lastIndexOf(10)  // returns 4
+
+
+        filter():
+                    It is used to filter array based on condition.
+
+                    let newArray= arrName. filter(function(element,index)){
+                        return condition
+                    }
+
+                    ex:- var arr = [10,20,30,50,60,70,80]
+                        let newArray = arr.filter(()=>{
+                            return element > 10
+
+                        })
+
+                        console.log(newArr);

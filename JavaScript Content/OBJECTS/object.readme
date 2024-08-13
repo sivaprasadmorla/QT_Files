@@ -1,0 +1,102 @@
+ OBJECT: It is a Data structure (or) Object is a pattern to store and manage the data (or) Object is a collection of properties.
+
+
+      final Definition:  It is a data structure and Collection of Properties.
+
+
+* We use "key : value" pair technique to store and manage the data. 
+
+
+3 ways  to create Object
+
+   1.Literal Notation:
+
+        Syntax:
+                var objName = {
+
+                }
+
+        Example:
+
+                var Student={
+                    id:101,
+                    name:"Siva",
+                };
+---------------------------------------
+
+Accessing  the specific property: 
+
+  1. Dot Notation.
+
+    Syntax:
+        var val= objName . keyname; 
+
+  2. Square Bracket Notation:
+
+    Syntax:
+
+        var val= objName[" keyName"]  
+----------------------------------------
+
+Adding New Property into Object:
+    
+  
+
+        objname["keyname"]= value;
+
+        objname.keyname = value;
+--------------------------------------------------------
+
+CRUD Operations in Objects.
+
+Inserting new property.
+----------------------
+       syntax:
+       ------
+       objname["keyname"]= value;
+
+       objname.keyname
+
+       ex: obj1["id"] = 1001;
+            
+            obj2.place="HYD";
+
+Updating the property:
+--------------------
+
+        syntax:
+        --------
+
+        objname.keyname = "newvalue"
+
+        objname["keyname"] = "newvalue"
+
+        Ex:  obj1.place = "NLR";
+
+             obj1["place"] = "NLR"
+
+Deleting the property:
+---------------------
+
+        syntax:
+
+        delete objname.keyname;
+
+        ex: delete obj1.place;
+
+-----------------------------------------------------------------
+
+
+*****    Objects can accept the functions also.
+
+        ex:
+         let obj={
+
+                fn: function(){
+                        console.log("function in object")
+                }
+         }
+
+        obj.fn();
+
+

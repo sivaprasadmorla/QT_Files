@@ -1,0 +1,29 @@
+Arthmetic Operators :
+--------------------
+
+Add (+)
+Sub (-)
+mul (*)
+div (/)
+modulus (%)
+Increment (++)
+Decrement (--)
+
+Comparision  Opertors : 
+----------------------
+
+        It is used to compare two values .
+
+        >   <   >=  <=  ==  ===  !=  !==
+
+        These operators always returns boolean value.
+
+Logical Operators :
+--------------------
+        It is used to compare two boolean Values
+
+    AND   &&
+
+    OR    ||
+
+    NOT   !

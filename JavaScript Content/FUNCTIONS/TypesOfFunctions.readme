@@ -1,0 +1,49 @@
+NAMED FUNCTION: A function which contains Function Name is called Named Function.
+
+---------------------------------------------------------------------------------------------
+
+ANONYMOUS FUNCTION:
+            Function which doesn't have Function name is called "ANONYMOU FUNCTION".
+               Directly we can't use Anonymous function. we can use by using FUNCTION EXPRESSION.
+            FUNCTION EXPRESSION: Any Function assigned to a variable is called Function Expression
+
+
+    
+SYNTAX:
+
+function(p1,p2){
+
+    return 
+}
+------------------------------------------------------------
+
+ARROW FUNCTION:
+            Function without function keyword and function name is called Arrow Function.
+
+
+--------------------------------------------
+CALLBACK FUNCTION: 
+            A function which is passed as an argument to the another function  is called Callback Function.
+
+-----------------------------------------------------------
+HIGHER ORDER FUNCTION: 
+                A function which takes another function as an argument is called "Higher Order Function".
+
+-----------------------------------------------------------------------------------------------
+
+Anonymous Function Example
+var fn=function(){      // This is Function Expression
+    return "hello";
+}
+console.log(fn());
+
+--------------------------------------
+
+Arrow Functions Example
+
+var val=()=>{
+    console.log("hello");
+}
+val();
+
+-------------------------------------

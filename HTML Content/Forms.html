@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <style>
+      form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 1px 10px rgba(163, 31, 31, 0.5);
+
+      }
+      .fields{
+        margin: 20px;
+      }
+
+      
+    </style> -->
+  </head>
+  <body>
+    <form>
+      <!-- input attributes are
+          value, name, id, class, placeholder, type, readonly ,disabled ,maxlength="value", minlength="value" -->
+      
+      <!-- Readonly ---we can select the input box but we can't made any change
+           Disabled ---Even we can't select the input box  -->
+      
+      <!-- input types
+            name, text, password, radio, checkbox, button, date, time,datetime, number, email, file,   -->
+            
+        <div style="text-align: center;">
+        <h2>Registration Form</h2>
+        <div class="fields">
+          <label for="FirstName">FirstName:</label>
+          <input type="text" name="FirstName" placeholder="Enter Firstname" />
+        </div>
+          <br>
+        <div class="fields">
+          <label for="LastName">LastName:</label>
+          <input type="text" name="LastName" placeholder="Enter lastname" />
+        </div>
+          <br>
+        <div class="fields">
+          <label for="Email">Email:</label>
+          <input type="email" name="Email" placeholder="Enter Email" />
+        </div>
+          <br>
+        <div class="fields">
+          <label for="PhNumber">Mobile Number:</label>
+          <input
+            type="number"
+            name="PhNumber"
+            placeholder="Enter your Number"
+          />
+        </div>
+          <br>
+          <div class="fields">
+            <label for="DOB">Enter Your DoB:</label>
+            <input type="date">
+          </div>
+          <br>
+          <div class="fields">
+            <label for="Skills">Graduation:</label>
+            <select name="Skills" >
+              <option value="">Select one option</option>
+              <option value="B.E">B.E</option>
+              <option value="B.TECH">B.TECH</option>
+
+            </select>
+          </div>
+          <br>
+          <label for="Address">Address:</label><br>
+          <textarea name="Address" id="" rows="5" cols="15" placeholder="Address">
+
+          </textarea>
+          <br>
+        <div class="fields">
+          <input type="radio" name="Gender" />
+          <label for="gender">Male</label>
+
+          <input type="radio" name="Gender" />
+          <label for="gender">FeMale</label>
+        </div>
+        <br>
+        <label for="Resume">Select File:</label>
+        <input type="file">
+          <br><br>
+
+        <div class="fields">
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
