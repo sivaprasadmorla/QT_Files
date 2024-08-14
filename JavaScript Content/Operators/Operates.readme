@@ -27,3 +27,21 @@ Logical Operators :
     OR    ||
 
     NOT   !
+
+
+Assignment Operators:
+---------------------
+
+                It is used to assign the values to the variables.
+
+        =
+
+        +=
+
+        -=
+
+        *=
+
+        /=
+
+        %=

@@ -1,0 +1,31 @@
+Spread Operator :-
+---------------
+It used to copy the elements of one array to another array.
+
+
+Ex : 
+        var obj1 ={
+            id: 101,
+            Name: Siva Prasad,
+        }
+
+        var obj2={
+
+        }
+
+        console.log(obj2)
+
+        If I want to copy obj1 in obj2
+
+        var obj1 ={
+            id: 101,
+            Name: Siva Prasad,
+        }
+
+        var obj2={
+                ...obj1,
+                Email: sivaprasad2002@gmail.com
+        }
+
+        console.log(obj2)
+

@@ -1,0 +1,14 @@
+Ternary Opertor :
+--------------
+        Syntax:
+        -------
+        Condition ? statment1  :  Statement2 
+
+
+        Ex : 
+
+            var x = 10
+
+            var y = 20
+
+            x > y ? console.log("X is greater") : console.log("Y is greater")
