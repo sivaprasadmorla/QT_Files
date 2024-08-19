@@ -12,3 +12,6 @@ Ternary Opertor :
             var y = 20
 
             x > y ? console.log("X is greater") : console.log("Y is greater")
+
+        O/p :-
+            Y is greater

@@ -1,0 +1,38 @@
+CONTROL STATEMENTS :-
+
+1. if :- 
+        is a control or selection statement.
+
+    -->  using if, we can create a block with some condition 
+
+        Syntax: 
+
+            if (condition){
+
+                STATEMENTS;
+
+            }
+
+2. else:-
+        It is used to execute set of statements incase if block condition becomes false.
+
+    --> It should be used only with if block.
+
+    --> Between if and else only one block will be executed at a time.
+
+        Syntax:
+
+            if (Condition){
+                
+                statements
+            }
+
+            else{
+
+                statements
+            }
+
+3. else if :
+
+        It is used to check multiple conditions in a if - else block .
+        
