@@ -3,7 +3,7 @@ NAMED FUNCTION: A function which contains Function Name is called Named Function
 ---------------------------------------------------------------------------------------------
 
 ANONYMOUS FUNCTION:
-            Function which doesn't have Function name is called "ANONYMOU FUNCTION".
+            Function which doesn't have Function name is called "ANONYMOUS FUNCTION".
                Directly we can't use Anonymous function. we can use by using FUNCTION EXPRESSION.
             FUNCTION EXPRESSION: Any Function assigned to a variable is called Function Expression
 

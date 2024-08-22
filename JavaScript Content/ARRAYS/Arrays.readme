@@ -6,7 +6,7 @@ Def:
 
       it is used to store same or different type of data.
 
-                                                                                    ****  The data type of an array is "OBJECT".     
+      ****  The data type of an array is "OBJECT".     
 
 -------------------------------------------------------------
 
@@ -43,7 +43,7 @@ Pre-Defined Functions.
 
                 ex: var arr=[1,2,3]
 
-                    arr.push(4,5)
+                    arr.push(4)
 
                     console.log(arr)
             

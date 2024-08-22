@@ -1,0 +1,60 @@
+Looping Statements : 
+                    It is used to execute the code mutliple times based on condtion we use Looping Statements.
+
+1.while
+
+2. do while
+
+3. for 
+
+4. for ... in
+
+5. for ... of
+
+
+while Loop :
+    
+    Syntax :
+            while (condition){
+
+                statements;
+            }
+
+
+do while loop :
+
+        Syntax :
+                do {
+                    
+                    statements
+
+
+                }while(condition);
+
+for Loop :
+
+        Syntax :
+                    for( initialisation ; condition ; inc/dec){
+
+                            statements
+                    }
+
+for .... of : It is targeting the values in the array
+        
+        Syntax:
+                for(variable declaration  of  arrName){
+
+                }
+
+            It is used to iterate an array.
+            It is used to access each element in the array
+           **** we can't used for Objects.
+
+for .... in : It is targeting the index values in an array      or    It is targeting the keys in objects .
+
+        Syntax :
+
+                for(variable declaration in objects){
+
+                    statements
+                }

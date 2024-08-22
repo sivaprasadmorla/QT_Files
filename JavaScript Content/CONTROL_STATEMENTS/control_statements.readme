@@ -36,3 +36,45 @@ CONTROL STATEMENTS :-
 
         It is used to check multiple conditions in a if - else block .
         
+        Syntax:-
+        
+            if (condition 1){
+
+            }
+            else if (condition 2){
+
+            }
+            else if(condition 3){
+
+            }
+            else{
+                
+            }
+
+4.Switch :
+            switch is a one type of selection statement.
+
+            switch is used to match expression values and values can be any type.
+
+            switch (val or expression){
+
+                case "value 1" :
+                ----------------
+                ------------------
+                break;
+
+                case "value 2" :
+                ----------------
+                ------------------
+                break;
+
+                case "value 3" :
+                ----------------
+                ------------------
+                break;
+
+                default :
+                --------------
+                ---------------
+
+            }
