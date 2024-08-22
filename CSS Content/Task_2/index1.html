@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container1{
+            text-align: center;
+            margin-top: 200px;
+            
+        }
+        button{
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            background-color: rgb(150,67,34);
+        }
+        button:hover{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1265.gif" style="margin-left:400px;margin-top:40px;display: none;" id="loading" alt="error">
+    <div class="container1">
+    <h1 id="heading">Hi Welcome to this page</h1><br>
+    <button onclick="handlePrev()"  id="prevbutton">&lt &lt;prev</button>
+    </div>
+
+    <script>
+        const handlePrev=()=>{
+            document.getElementById("heading").style.display = "none"
+            document.getElementById("prevbutton").style.display = "none"
+            document.getElementById("loading").style.display = "block";
+
+            setTimeout(()=>{
+                window.location.href =  "index.html"
+            },2000)
+        }
+    </script>
+</body>
+</html
