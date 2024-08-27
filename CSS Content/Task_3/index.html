@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://allnvysbhq.cloudimg.io/v7/www.projectsmart.co.uk/img/outsourcing-offshore.png" alt="image">
+        </div>
+        <div class="TravelForm">
+            <table id="tab">
+                <tr aria-colspan="3">
+                    <th><h2>Elite Travel Management</h2></th>
+                </tr>
+            </table>
+                <table id="subtable" cellspacing="6"  >
+                    <tr>
+                        <td><a href="#">travel-info</a></td>
+                        <td><a href="#">personal-info</a></td>
+                        <td><a href="#">Activities Preferences</a></td>
+                    </tr>
+                    <tr>
+                        <td id="travel" colspan="3"><h2>Travel Information</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="destination">Select Your travel Destination:</label><br>
+                            <select name="destination" id="destination">
+                                <option value="select">select</option>
+                                <option value="HYD">HYD</option>
+                                <option value="NLR">NLR</option>
+                                <option value="VJWD">VJWD</option>
+                                <option value="BEN">BEN</option>
+                            </select>
+
+                        </td>
+                        <td>
+                            <label for="dateOfdeparture">Date of Departure:</label><br>
+                            <input type="date" name="dateOfdeparture" id="dateOfdeparture">
+
+                        </td>
+
+                        <td>
+                            <label for="dateOfarrival">Date of arrival:</label><br>
+                            <input type="date" name="dateOfarrival" id="dateOfarrival">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="kids" placeholder="No.of kids">
+                        </td>
+                        <td>
+                            <input type="number" name="teens" id="teens" placeholder="No.of teens">
+                        </td>
+                        <td>
+                            <input type="number" id="adults" placeholder="No.of adults">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><h3>Visa Assistance</h3></td>
+                        <td>
+                            <input type="radio" name="Visa Assistance" id="yes">
+                            <label for="yes">Yes</label>
+
+                        </td>
+                        <td>
+                            <input type="radio" name="Visa Assistance" id="no">
+                            <label for="no">No</label>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="3"><h2 id="personal">Personal Information</h2></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><p>Customer Name</p></td>
+                        <td colspan="2">
+                            <input type="text" id="cname" placeholder="Enter the Customer name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><p>Phone Number</p></td>
+                        <td colspan="2">
+                            <input type="number" id="cnumber" placeholder="Enter the Phone number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Email ID</p></td>
+                        <td colspan="2">
+                            <input type="email" id="cemail" placeholder="Enter the Email Id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" id="PreferencesData">
+                            <h2 id="Preferences">Activities Preferences</h2>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Museums" id="Museums">
+                            <label for="Museums">Museums & Historic Sites</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Culture" id="Culture">
+                            <label for="Culture">Culture</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Beaches" id="Beaches">
+                            <label for="Beaches">Beaches</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Shopping" id="Shopping">
+                            <label for="Shopping">Shopping</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Wildlife" id="Wildlife">
+                            <label for="Wildlife">Wildlife</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Relaxing" id="Relaxing">
+                            <label for="Relaxing">Relaxing</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3"><a href="#" id="footer">**Click here to unlock exclusive offers</a></td>
+                    </tr>
+                    
+                    
+                </table>
+                <br>
+                    
+                        <button id="btn">BUILD PACKAGE</button>
+        </div>
+    </div>
+</body>
+</html>

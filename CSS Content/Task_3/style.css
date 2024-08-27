@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    gap: 50px;
+    background-color:rgba(229, 255, 0, 0.5);
+    color: bisque;
+    
+}
+img{
+    height: 550px;
+    width: 500px;
+    margin-left:30px ;
+    border: none;
+    border-radius:15px ;
+}
+.TravelForm{
+    background-color: green;
+    border-radius: 15px;
+}
+#tab{
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 99%;
+    color: red;
+   margin:3px 0px 3px 3px;
+
+}
+#subtable{
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#subtable td{
+    background-color: blue;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+h2{
+    color: red;
+}
+#destination{
+    width: 90%;
+}
+#dateOfdeparture{
+    width: 90%;
+}
+#dateOfarrival{
+    width: 90%;
+}
+#kids{
+    width: 100%;
+}
+
+#btn{
+    margin: 10px;
+    padding:3px 7px;
+    font-weight: bold;
+    color: red;
+    border: none;
+    border-radius: 5px;
+
+}
+#btn:hover{
+    background-color: red;
+    color: black;
+}
+
+#footer{
+    color: white;
+}
+#cemail,#cnumber,#cname{
+    width: 100%;
+}
