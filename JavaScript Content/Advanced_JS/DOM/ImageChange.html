@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="DisplayImage">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpT6rscUaqC6IK1x48k9GU-Av3fgKo0lPgg&usqp=CAU" alt="React" style="display: none;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vHLpTaKVT-DF2kCZCvVrfrb89x6AuhrV4A&usqp=CAU" alt="Angular" style="display: none;">
+        
+        
+    </div>
+    <button onclick="displayReact()">React</button>
+    <button onclick="displayAngular()">Angular</button>
+
+    <script>
+        var imgDomElement = document.querySelectorAll("img");
+
+        let displayReact = ()=>{
+            imgDomElement[1].style.display="none"
+            let reactElement = imgDomElement[0].style.display
+            if(reactElement === "none"){
+                imgDomElement[0].style.display = "block"
+            }
+            else{
+                imgDomElement[0].style.display= "none"
+            }
+        }
+        let displayAngular = ()=>{
+            imgDomElement[0].style.display="none"
+            let angularElement = imgDomElement[1].style.display
+            
+            if(angularElement === "none"){
+                imgDomElement[1].style.display = "block"
+            }
+            else{
+                imgDomElement[1].style.display= "none"
+            }
+        }
+    </script>
+</body>
+</html>

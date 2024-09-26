@@ -1,0 +1,19 @@
+Destructuring: 
+
+        It is a technique to unpack the properties from the objects and elements from an array.
+
+        Syntax:
+
+            var {key1,key2,...} = objectName
+
+        Ex: 
+            obj1 = {
+                name : "siva",
+                id : 101,
+                desgination : "MernStack Developer"
+            }
+
+            var {name,id} = obj1
+
+            O/p : 
+                siva 101

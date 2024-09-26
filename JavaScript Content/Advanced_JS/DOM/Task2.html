@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createMyDomElement() {
+        var h1DomElement = document.createElement("h1");
+        h1DomElement.innerText = "New h1 Element";
+
+        var paraDomElement = document.createElement("p")
+        paraDomElement.innerText = "Hi Siva Prasad"
+
+        var divDomElement = document.querySelector("body");
+        divDomElement.appendChild(h1DomElement);
+
+        divDomElement.appendChild(paraDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Create New Dom Element</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus,
+        quisquam vero animi quod minima pariatur a. Expedita blanditiis itaque
+        consectetur. Deserunt aperiam id soluta velit molestias tempora mollitia
+        nulla, atque ipsam ratione rerum maxime molestiae! Dolorum inventore
+        esse, iusto consequuntur, at delectus exercitationem, eius provident
+        quod corrupti consequatur. Voluptatem veritatis laborum rem inventore ea
+        modi magnam tenetur explicabo porro nulla assumenda, quod consequatur
+        quidem ad nisi vero iusto illo, aliquid sint aliquam obcaecati, beatae
+        at deserunt. Earum, quas ipsam laudantium quos, exercitationem eligendi
+        veniam inventore impedit quis delectus mollitia amet maxime natus hic
+        dignissimos, eius voluptas. Ipsa, quam asperiores.
+      </p>
+      <button onclick="createMyDomElement()">Create DOM</button>
+    </div>
+  </body>
+</html>

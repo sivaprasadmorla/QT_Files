@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="input" id="input">
+    <p id="display"></p>
+
+
+
+    <script>
+        function search(){
+            
+            console.log("searching..")
+            let display = document.querySelector("#display")
+            display.innerHTML= "Searching..."
+            setTimeout(()=>{
+                display.innerHTML = ""
+
+            },500)
+
+        }
+        function debounce(func,delay){
+            let timeoutId 
+            return function(...args){
+                clearTimeout(timeoutId)
+
+                timeoutId = setTimeout(()=>{
+                    func.apply(this,args)
+                },delay)
+            }
+        }
+        var debouncedSearch = debounce(search , 500)
+        var inputDomElement = document.getElementById("input")
+        inputDomElement.addEventListener("input",debouncedSearch)
+        
+    </script>
+</body>
+</html>

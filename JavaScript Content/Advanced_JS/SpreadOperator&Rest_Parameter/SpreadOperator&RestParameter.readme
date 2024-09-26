@@ -1,0 +1,45 @@
+Spread Opertor :
+--------------
+
+    It is a special opertor which is used to copy the properties of one object to another object and elements from one array to another array.
+
+EX:
+    var obj1 ={
+
+        name : "siva",
+        id : 101
+    }
+
+    var obj2= {
+
+        ...obj1,
+        city : "hyd"
+    }
+    console.log(obj2)
+
+    var arr= [1,2,3,4]
+
+    var arr1 = [...arr,"siva"]
+
+    console.log(arr1)
+
+
+
+
+    Rest parameter: 
+
+        It is a parameter in js which is used to hold the remaining arguments of the function which does not have parameters.
+
+
+        Rules:
+        -----
+
+        It should the last parameter.
+        It stores the arguments in the form of array.
+
+        function f1(x,...args){
+            console.log(x);
+            console.log(args)
+        }
+
+        f1(100,200,300,400)

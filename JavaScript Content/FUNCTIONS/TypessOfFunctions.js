@@ -21,7 +21,7 @@
 
 
 let res = (val) =>{
-    console.log(val);
+    console.log(val());
 
 }
 res(function(){

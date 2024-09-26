@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position:relative;
+            width: 400px;
+            height:400px;
+            border: 2px  solid black;
+            margin: 50px;
+            background-color: brown;
+        }
+        .container1{
+            position: absolute;
+            top: 0;
+            left:0 ;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .container2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(255, 0, 140);
+        }
+        .container3{
+            position: absolute;
+            
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">               
+        <div class="container1"></div>      <!--absolute to the parent is "container"-->
+        <div class="container2"></div>      <!--absolute to the parent is "container"-->
+    </div>
+    <div class="container3"></div>   <!--absolute to the parent that is "body"-->
+
+    
+</body>
+</html>

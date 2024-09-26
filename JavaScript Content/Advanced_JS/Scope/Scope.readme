@@ -1,0 +1,27 @@
+Scope :
+
+        It is a boundary or area or space.
+
+There are 4 types of scopes 
+
+1. Global Scope
+
+2. Function Scope
+
+3. Module Scope
+
+4. Block Scope
+
+Global Scope :
+                The area that doesn't comes under any block or function then it is called Global Scope.
+
+Function Scope:
+                The area that comes under a function is called Funcion Scope.
+
+Block Scope :
+                The area that comes any block like {} is called Block Scope.
+
+                Ex : if(condition){
+                        
+                        This is block scope.
+                }

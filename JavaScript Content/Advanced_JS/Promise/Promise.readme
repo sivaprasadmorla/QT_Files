@@ -1,0 +1,149 @@
+Promise in JavaScript :
+	
+		Promise is a special Object in JS where we can store and manage the data.
+
+Data of promise can be divided in to two types 
+
+1. Success Data
+
+2. Failure / Error Data .
+
+Creation of Promise Object :
+
+	To create promise we use
+ 		
+			1. new Operator
+
+			2. Promise() (Pre-defined Constructor)
+
+	SYNTAX :
+			var varName= new Promise(callback function) 
+	
+
+	EX:
+		var promiseObject = new Promise((resolve,reject)=>{
+								 
+						})
+		console.log(promiseObject)
+	
+Note : Pending label indicates Promise Object is empty.
+
+
+How To insert the data in the promise Object : 
+-----------------------------------------------------------------
+
+		using two predefined functions called resolve() and reject(), we can store data in the promise Object.
+
+		we can access resolve() and reject() using two parameters which are defined in the callback function of  Promise() constructor.
+
+How to add or sore data in the Promise object using resolve():
+--------------------------------------------------------------------------
+
+	
+	var promiseObj = new Promise((resolve,reject)=>{
+					resolve(100);
+})
+
+console.log(promiseObj)
+
+Note : what ever data we pass as a parameter to the resolve() , that data will be stored in the Promise Object.
+
+	var promiseObj = new Promise((resolve,reject)=>{
+			resolve({
+			name : "siva",
+			id : 101,
+})
+})
+
+Note: whatever data we store using resolve() in the promise that data is called “Success Data”.
+
+How to store the data using reject() :
+
+Var promiseObj = new Promise((resolve,reject)=>{
+reject(100);
+})
+console.log(promiseObj);
+
+Note : Whatever data we pass as an argument to reject(), that data will store in the promise Object.
+
+Note : Data stored in the promise object using reject function is called “Error/Failure  Data”
+
+There are 3 states in Promise :
+-----------------------------
+
+1.	Pending state  ------------ promise Object is empty
+2.	Resolved / fulfilled state   ------------ Promise object contains success data
+3.	Failure/rejected  state --------- Promise object contains failure data
+
+How to access the data of Promise:
+
+There  are two ways to access the promise
+1.	Using then() and catch() pre-defined functions
+
+2.	Using async await
+
+
+
+Using then() and catch() function :
+
+**   then() takes one callback function and that callback function takes one parameter and that parameter holds the information in the 		resolve() function.
+
+	catch() takes one callback function and that callback function takes one parameter and that parameter holds the information in the 		reject() function
+
+var promiseObj = new Promise((resolve,reject)=>{
+				resolve({
+					name : "siva",
+					id : 101,
+})
+})	
+
+If we want our object we use to call then() and catch()
+
+promiseObj.then(function(successData){
+console.log(“then is Executed”)
+console.log(“successData”)
+})
+.catch(function(errorData){
+	Console.log(“Error is executed”)
+})
+------------------------------------------------------------------------------------------------
+Using reject
+--------------
+var promiseObj = new Promise((resolve,reject)=>{
+				reject({
+					name : "siva",
+					id : 101,
+})
+})	
+
+
+promiseObj.then(function(successData){
+console.log(“then is Executed”)
+console.log(successData)
+})
+.catch(function(errorData){
+	Console.log(“Error is executed”)
+	Console.log(errorData)
+})
+
+
+Note: 
+1.If promiseObject contains success data in that case then() will be called. 
+2.If promiseObject contains failure data in that case catch() will be called.
+
+
+The Process of accessing the data from the promise Object is called “Handling Object”	
+
+
+
+2nd way :-
+-------
+
+Async Await :-
+-----------
+
+		It is a technique to access the data from the promise object.
+
+		where Async is a keyword to create Async funnction 
+
+

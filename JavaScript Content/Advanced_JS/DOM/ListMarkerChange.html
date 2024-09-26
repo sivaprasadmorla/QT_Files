@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .marker-container{
+            display:flex;
+            gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Change the List Marker</h1>
+    <div class="marker-container">
+        <div>
+      <input type="radio" name="types" checked value="1"/>
+      <label for="1">1</label>
+    </div>
+    <div>
+      <input type="radio" name="types" value="a" />
+      <label for="a">a</label>
+    </div>
+    <div>
+      <input type="radio" name="types" value="A" />
+      <label for="A">A</label>
+    </div>
+    </div>
+    <button onclick="changeMarker()">Change Marker</button>
+    <div class="list-container">
+
+    </div>
+
+
+    <script>
+        let listDomElement = document.getElementsByClassName("list-container")[0];
+        
+        
+        let changeMarker = () =>{
+            let radioValue;
+            let radio = document.getElementsByName("types")
+            for(i=0;i<radio.length;i++){
+                if(radio[i].checked){
+                    radioValue = radio[i].value
+                    break
+                }
+
+            }
+
+            let list = document.createElement("ol");
+            list.type = radioValue
+            
+            let li1 = document.createElement("li")
+            let li2 = document.createElement("li")
+            let li3 = document.createElement("li")
+            let li4 = document.createElement("li")
+
+            li1.innerText = "Apple"
+            li2.innerText = "Samsung"
+            li3.innerText = "Oppo"
+            li4.innerText = "Vivo"
+            
+            list.appendChild(li1)
+            list.appendChild(li2)
+            list.appendChild(li3)
+            list.appendChild(li4)
+
+            listDomElement.appendChild(list)
+
+        }
+        
+
+    </script>
+  </body>
+</html>

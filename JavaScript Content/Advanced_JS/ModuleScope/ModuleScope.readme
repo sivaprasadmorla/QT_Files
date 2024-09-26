@@ -1,0 +1,57 @@
+Module Scope : 
+
+                It is a technique which is used to access the variables or functions or objects or classes from one file to another file.
+
+
+1. common js module pattern
+
+2. Es6 module pattern.
+
+        1. create a package.json file.
+        2. Add one empty object in that file.
+        3. Add "type" property with "module" as value in that object.
+
+In Es6 module pattern, we can do in two ways.
+
+                we can do import and export and they are 
+
+                    1. Named Export and Named import
+
+                    2. Default Export and Default import
+
+
+Named Export :
+-------------
+
+        In Named Export, prefix export keyword before variable name or function or class.
+
+        In one Js file, we can do any number of named Export.
+
+        We can do named export in two ways and they are 
+
+            Type-1:
+
+                ex : 
+
+                        export var username = "Siva";
+
+                        export let city ="pune";
+
+            
+            Type-2:
+
+                ex:
+
+                    var ename = "siva";
+
+                    var designation = "software Engineer";
+
+                    const num = 123;
+
+                    export {ename, designation};
+
+Default Export 
+--------------
+
+
+                

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="fontsize" id="fontsize" onchange="changeFont()">
+        <option value="select">select</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+    </select>
+    <select name="colors" id="colors" onchange="changeColor()">
+        <option value="select">select</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <select name="fontFamily" id="fontFamily" onchange="changeFontFamily()">
+        <option value="select">select</option>
+        <option value="Times New Roman">TimesNewRoman</option>
+        <option value="serif">serif</option>
+        <option value="Arial">Arial</option>
+        
+    </select>
+    <p id="greeting">Hi Siva Prasad</p>
+
+    <script>
+        let fonts = document.getElementById("fontsize");
+        let greeting = document.getElementById("greeting");
+        let colors = document.getElementById("colors")
+        let fontFamily = document.getElementById("fontFamily")
+        let changeFont=()=>{
+            greeting.style.fontSize = fonts.value + "px";
+        }
+        function changeColor(){
+            greeting.style.color = colors.value;
+        }
+        let changeFontFamily = ()=>{
+            greeting.style.fontFamily = fontFamily.value;
+        }
+
+    </script>
+
+</body>
+</html>

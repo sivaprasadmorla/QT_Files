@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <script>
+        var imgtag = React.createElement('img',{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlHOhYT6R8j-g_yqNhaC32k_FcKIgHOs6YA&usqp=CAU",id:'image'})
+       
+
+
+        var paratag = React.createElement("p",{id:"para"},'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores. Sapiente, riores?')
+       
+
+        var buttontag = React.createElement('button',{id:'btn'},'Sign In')
+        
+
+        var cartDiv = React.createElement("div",{class:'cartDiv'},[imgtag,paratag,buttontag ])
+        ReactDOM . render(cartDiv,document.querySelector('.container'))
+    </script>
+</body>
+</html>

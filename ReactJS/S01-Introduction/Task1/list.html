@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bodyDomElement = document.querySelector("body");
+        let ol = document.createElement("ol")
+        ol.type = "a"
+        let li1 = document.createElement('li');
+        let li2 = document.createElement('li');
+        let li3 = document.createElement('li');
+        let li4 = document.createElement('li');
+        li1.innerHTML= "Apple"
+        li2.innerHTML = "Samsung"
+        li3.innerHTML = "Poco"
+        li4.innerHTML = "Oneplus"
+
+        ol.append(li1,li2,li3,li4)
+        bodyDomElement.appendChild(ol);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .card{
+            width: 20%;
+            height: 70%;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 0px 0px 20px black;
+            padding: 20px;
+            margin: 20px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ 
+</head>
+<body>
+    <script type="text/babel">
+        var card =(url,name)=>{
+          
+          return(<div class="card">
+                <img src={url} alt="image"/>
+                <h2>{name}</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro!</p>
+                <button>View Profile</button>
+            </div>)
+            
+          }
+        var container = (<div class="container">
+          {card("https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?w=1000&h=1500&rs=1&pid=ImgDetMain","Siva Prasad ")}
+          {card('https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gHaHa?rs=1&pid=ImgDetMain',"Nicholas cheung")}
+          {card('https://th.bing.com/th/id/OIP.9SHpRu-eHOXnMFrShy77OAHaIv?pid=ImgDet&w=191&h=225&c=7','Jeremy Allison')}
+  
+          </div>)
+            ReactDOM.render(container,document.querySelector("body"))
+      </script>
+</body>
+</html>

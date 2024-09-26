@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReactDIV_P_h1</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <script>
+      var div = React.createElement("div", null, [
+        React.createElement(
+          "p",
+          null,
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur sed maiores neque est tempora alias, quidem autem itaque quaerat!"
+        ),
+        React.createElement(
+            "h1",
+            null,
+            "I am Siva Prasad"
+        )
+      ]);
+
+      ReactDOM.render(div,document.querySelector("body"))
+    </script>
+  </body>
+</html>

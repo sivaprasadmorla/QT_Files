@@ -1,0 +1,28 @@
+DOM : 
+        All the DOM elements are arranged sequentially in a tree like structure is called "DOM"(Document Object Model).
+
+        DOM elements : are the objects created based on HTML elements.
+
+
+Structure Sequence :
+
+    HTML Elements ------ Objects ------ DOM Elements ----- DOM ---- CSSOM ---- render tree ----- UI components visible on the  screen.
+
+
+
+Why DOM is created ?
+    To create Dynamic User Interface.
+
+1. UI which can be created On Demand.
+
+2. Style of UI can br changed On Demand.
+
+3. Content of UI can be modified On Demand.
+
+4. Add or remove the elements from the web page On demand.
+
+
+
+DOM Manipulation :
+
+                It is a process to change the content or style of the element or add new element or remove existing element or modify the element on the web page.

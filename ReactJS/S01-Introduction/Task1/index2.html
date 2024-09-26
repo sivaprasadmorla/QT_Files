@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bodyDomElement = document.querySelector("body");
+      let table = document.createElement("table");
+      let trow1 = document.createElement("tr");
+      let trow2 = document.createElement("tr");
+      let trow3 = document.createElement("tr");
+      let theader1 = document.createElement("th");
+      let theader2 = document.createElement("th");
+      let theader3 = document.createElement("th");
+      let theader4 = document.createElement("th");
+      theader1.innerText = "Name";
+      theader2.innerText = "Id";
+      theader3.innerText = "Designation";
+      theader4.innerText = "Salary";
+      trow1.append(theader1, theader2, theader3, theader4);
+
+      function fn(name, id, Designation, salary) {
+        let trow = document.createElement("tr");
+
+        let tdata1 = document.createElement("td");
+        let tdata2 = document.createElement("td");
+        let tdata3 = document.createElement("td");
+        let tdata4 = document.createElement("td");
+        tdata1.innerText = `${name}`;
+        tdata2.innerText = `${id}`;
+        tdata3.innerText = `${Designation}`;
+        tdata4.innerText = `${salary}`;
+        trow.append(tdata1, tdata2, tdata3, tdata4);
+        return trow;
+      }
+      table.append(
+        trow1,
+        fn("siva", 101, "web Developer", 20000),
+        fn("Ramu", 102, "Android Developer", 40000),
+        fn("sohel", 103, "FrontEnd Dev", 50000)
+      );
+      bodyDomElement.appendChild(table);
+    </script>
+  </body>
+</html>

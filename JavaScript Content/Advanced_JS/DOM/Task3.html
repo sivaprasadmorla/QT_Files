@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <button id="listBtn" onclick="listBtn()">ListButton</button>
+    <button id="tableBtn" onclick="tableBtn()">TableButton</button>
+    <script>
+        var divDomElement = document.getElementsByClassName("container")[0];
+        function listBtn(){
+            var createListElement = document.createElement("ol")
+            var li1 = document.createElement("li")
+            var li2 = document.createElement("li")
+            var li3 = document.createElement("li")
+
+            li1.innerText = "Lenovo"
+
+            li2.innerText ='Apple'
+
+            li3.innerText = "Hp"
+
+            createListElement .appendChild(li1)
+            createListElement .appendChild(li2)
+            createListElement .appendChild(li3)
+
+            divDomElement.appendChild(createListElement)
+
+        }
+    </script>
+</body>
+</html>
