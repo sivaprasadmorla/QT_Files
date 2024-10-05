@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+    <script type="text/babel">
+        var fn =(name)=>{
+            return(
+                <div>
+                    <h2>Hello, {name}!</h2>
+                    <p>JSX allows embedding JavaScript expressions</p>
+                </div>
+                
+            )
+        }
+
+        var container =()=>{
+            return(
+                <div>
+                {fn("Siva")} 
+                {fn("Ganesh")}   
+                {fn("Yashwanth")}
+                </div>
+            )
+        }
+
+        ReactDOM.render(container(),document.querySelector("body"))
+    </script>
+    
+</body>
+</html>

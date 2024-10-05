@@ -1,0 +1,35 @@
+_____________
+
+
+### Question 1: Creating a React Element
+
+Write a function in React that creates a simple *React element* to display a heading with the text "Welcome to React" and a paragraph below it that says "This is a basic React element." Render this element using the ReactDOM.render() method.
+
+### Question 2: Rendering Dynamic Content with React Elements
+
+Create a React component that renders a *React element* with dynamic content. The component should accept a name prop and display a greeting message in a <div> element. For example, if the name prop is "John," the component should render the message "Hello, John! Welcome to React."
+
+### Question 3: Creating Nested React Elements
+
+Write a React function that returns a *nested React element* structure. The element should consist of a <div> containing a <ul> list with three <li> items. The text of the list items should be "Item 1", "Item 2", and "Item 3". Render this element to the DOM.
+
+
+
+
+
+### Task 1: Create and Render JSX Elements
+
+Write a simple React component that uses *JSX* to create and display a section with the following content:
+- A heading (<h1>) that says "My First JSX Task".
+- A paragraph (<p>) that describes JSX as "A syntax extension for JavaScript".
+- An unordered list (<ul>) with three items (<li>), each item representing a different feature of JSX (e.g., "JSX allows embedding expressions", "JSX supports component rendering", "JSX helps in creating DOM elements").
+
+Render this component in the browser using ReactDOM.render().
+
+### Task 2: Dynamic JSX with JavaScript Expressions
+
+Create a React component that takes a username prop and dynamically renders a greeting message using *JSX*. The component should:
+- Display the message "Hello, [username]!" inside an <h2> element.
+- Include a <p> element below that explains, "JSX allows embedding JavaScript expressions," with an example of embedding the username directly inside the JSX code.
+
+Render this component and pass a username value to it when calling ReactDOM.render().

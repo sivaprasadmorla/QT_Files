@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+      let navbar = (
+        <nav class="navbar">
+          <div class="logo">
+            <img
+              src="https://w7.pngwing.com/pngs/784/183/png-transparent-shopify-logo-e-commerce-business-super-sale-angle-text-service-thumbnail.png"
+              alt=""
+            />
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Electronics</a>
+              </li>
+              <li>
+                <a href="#">Men</a>
+              </li>
+              <li>
+                <a href="#">Women</a>
+              </li>
+              <li>
+                <a href="#">Kids</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button id="btn">Sign Up</button>
+            <button id="btn">Log In</button>
+          </div>
+        </nav>
+      );
+
+
+      // =================================================================================================
+
+
+      var card =(url,name)=>{
+          
+          return(<div class="card">
+                <img src={url} alt="image"/>
+                <h2>{name}</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro!</p>
+                <button>Buy</button>
+            </div>)
+            
+          }
+      var cardContainer =()=>{
+        return(
+          <div class="cardContainer">
+
+            {card("https://th.bing.com/th/id/OIP.6lmWVVhVDcabCjgeTOoFlAHaFj?w=241&h=180&c=7&r=0&o=5&pid=1.7","Apple")}
+            {card("https://th.bing.com/th?id=OIP.HQNRWQtLTGwJEMda0DdCWgHaFj&w=288&h=216&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2","Orange")}
+            {card("https://th.bing.com/th?id=OIP.yQpr8jjqKnI_D713xvh27gHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2","Mangoes")}
+
+            </div>
+        )
+      }
+
+      let main = <div class="main">
+        
+        </div>
+      ReactDOM.render([navbar,cardContainer()],document.querySelector("body"))
+    </script>
+  </body>
+</html>
