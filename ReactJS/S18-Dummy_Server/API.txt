@@ -1,0 +1,21 @@
+All Products
+
+http://localhost:3000/products
+
+For addToCart
+http://localhost:3000/addToCart
+
+For Wishlist
+http://localhost:3000/wishList
+
+For electronics
+http://localhost:3000/electronics
+
+For Jewelery
+http://localhost:3000/jewelery
+
+For MenClothing
+http://localhost:3000/mensclothing
+
+For womensclothing
+http://localhost:3000/womensclothing

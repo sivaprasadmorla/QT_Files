@@ -1,0 +1,33 @@
+.cardContainer{
+    width: 200px;
+    height: 370px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px black;
+}
+.cardContainer img{
+    width: 90%;
+    height: 100px;
+}
+.cardContainer h4{
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+.cardContainer button{
+    margin: 10px;
+    padding: 3px 10px;
+    border: 1px solid green;
+    box-shadow: 0 0 10px black;
+    color: green;
+    font-family: cursive;
+}
+.cardContainer :last-child{
+    border: 1px solid red;
+    box-shadow: 0 0 10px black;
+    color: red;
+}

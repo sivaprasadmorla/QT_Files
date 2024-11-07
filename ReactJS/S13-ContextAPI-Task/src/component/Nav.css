@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+    color: blanchedalmond;
+}
+.Logo{
+    width: 40%;
+    height: auto;
+    font-family: cursive;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.navlinks a{
+    text-decoration: none;
+    color:bisque;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navlinks button{
+    background-color: red;
+    color: beige;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: cursive;
+
+}

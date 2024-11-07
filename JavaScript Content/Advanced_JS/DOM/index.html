@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createList(){
+            var olDomElement=document.createElement("ol");
+            olDomElement.type="a";
+            
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            var li3 = document.createElement("li");
+            var li4 = document.createElement("li");
+
+            li1.innerText="apple";
+            li2.innerText="samsung";
+            li3.innerText="redmi";
+            li4.innerText="moto";
+
+            olDomElement.appendChild(li1);
+            olDomElement.appendChild(li2);
+            olDomElement.appendChild(li3);
+            olDomElement.appendChild(li4);
+
+            var bodyRef=document.querySelector("body");
+            bodyRef.appendChild(olDomElement);
+
+        }
+    </script>
+</head>
+<body>
+    <h2>create list</h2>
+    <button onclick="createList()">submit</button>
+</body>
+</html>

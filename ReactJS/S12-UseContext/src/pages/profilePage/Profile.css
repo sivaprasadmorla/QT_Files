@@ -1,0 +1,28 @@
+.profile-container{
+    width: 1000px;
+    height: 70vh;
+    margin: 40px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 0 10px black;
+    
+}
+.profileImage{
+    width: 300px
+
+}
+.ProfileDetails{
+    width: 700px;
+    
+}
+.profileImage img{
+    width: 300px;
+    height: 70vh;
+}
+.ProfileDetails button{
+    margin: 5px 20px;
+}
+
+.ProfileDetails input{
+    margin: 10px 3px;
+}
