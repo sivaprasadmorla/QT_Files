@@ -3,7 +3,7 @@ import Carousel from './Carousel'
 const Home = () => {
   return (
     <div style={{textAlign:"justify", margin:"20px",display:'flex',flexDirection:"column",justifyContent:'center',alignItems:'center'}}>
-        {/* <Carousel/> */}
+       
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, sapiente. Molestias vero porro odit saepe. Porro laudantium voluptate explicabo magnam fuga, error illum adipisci enim at inventore quis laborum iure delectus possimus, sit iusto optio, natus alias sed corrupti. Quidem numquam blanditiis quisquam omnis et voluptatibus expedita hic est esse, amet rerum modi molestias ipsum asperiores quod at nisi quos molestiae? Totam aliquam praesentium vel officia iste fugiat sapiente corporis illum blanditiis expedita ea animi impedit velit explicabo vero, recusandae ut inventore non dicta dignissimos itaque molestiae exercitationem reiciendis magnam. Quam similique, minus commodi consequatur cum tempore cumque eligendi hic, quos ut, beatae iure in reiciendis provident! Praesentium id error quae alias tenetur reprehenderit obcaecati earum illum hic reiciendis omnis magnam, aperiam repudiandae odit quod illo nihil, dolorem voluptatem autem animi assumenda veritatis. Sequi, consequuntur? Illum, perspiciatis at aliquam non fugiat quam ut, dolores illo ex labore aspernatur numquam nostrum quis dolorem! Laboriosam quod tempora temporibus eligendi porro aliquam quae inventore ut commodi soluta ex, sapiente doloremque adipisci recusandae dicta esse corrupti. A dolor in ea iusto veniam nihil iure facere numquam, quasi provident sit est neque voluptate consequuntur asperiores, explicabo tempore. Natus quidem saepe, amet optio debitis unde libero?</p>
 <br />
 <br />
