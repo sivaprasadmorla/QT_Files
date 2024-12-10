@@ -1,0 +1,31 @@
+.ImageContainer{
+    height: 45vh;
+    width: 65%;
+    background-color: burlywood;
+    display: flex;
+    border-radius: 10px;
+    margin-top:10px
+
+}
+.leftPanel{
+    width:30% ;
+}
+img{
+    padding: 5px;
+}
+
+#chatButton{
+    background-color: beige;
+    border: 1px solid blue;
+    color: blue;
+    padding : 2px 10px 2px 10px;
+    margin:20px 20px;
+    border-radius: 10px;
+}
+#followButton{
+    background-color: blue;
+    color: white;
+    padding : 2px 10px 2px 10px;
+    margin:20px 20px;
+    border-radius: 10px;
+}

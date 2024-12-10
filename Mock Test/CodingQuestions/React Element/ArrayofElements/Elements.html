@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Elements</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <script>
+      var UlList = React.createElement("ul", null, [
+        React.createElement("li", null, "LENOVO"),
+        React.createElement("li", null, "DELL"),
+        React.createElement('li', null, "HP"),
+      ]);
+      ReactDOM.render(UlList, document.querySelector("body"));
+    </script>
+  </body>
+</html>
